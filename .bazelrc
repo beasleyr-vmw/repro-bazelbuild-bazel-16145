@@ -1,0 +1,8 @@
+startup --host_jvm_debug
+
+# build --remote_executor=<fillmein>
+build --extra_execution_platforms=//:rbe_platform
+build --internal_spawn_scheduler
+build --strategy=Action=dynamic
+build --experimental_debug_spawn_scheduler
+build --noremote_accept_cached
